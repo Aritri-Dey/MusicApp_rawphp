@@ -1,0 +1,145 @@
+body,html,* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(150, 144, 186);
+  font-size: 18px;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(226, 149, 16);
+}
+button, .buttons {
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(93, 83, 156);
+}
+button:hover , .buttons:hover {
+  background: rgb(228, 159, 40);
+  color: black;
+}
+
+/*header*/
+.header-wrapper {
+  display: flex;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.header-left, .header-right {
+  display: flex;
+  gap: 15px;
+}
+
+/*index*/
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  background: white;
+}
+/* .container#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+} */
+.loginPopup , .registerPopup {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+  transition: 0.5s;
+  padding: 20px;
+  border-radius: 20px;
+  display: none;
+  justify-content: space-between;
+}
+#close {
+  padding: 10px;
+  float: right;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #loginPopup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  filter: none;
+} */
+.show {
+  display: block;
+}
+.playList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.music {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  padding: 50px;
+}
+.item img {
+  object-fit: cover;
+  width: 100%;
+}
+.fill-red {
+  color: red;
+}
+
+/*fav page*/
+.favItem {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px;
+}
+.eachItem img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/*reset password */
+.resetPasswordForm {
+  width: 60%;
+}
